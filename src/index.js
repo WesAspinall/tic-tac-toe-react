@@ -2,16 +2,16 @@ import './index.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class Square extends React.Component {
 
-  render() {
+//functional component
+function Square(props) {
     return (
-      <button className="square" onClick={() => this.props.onClick()}>
-        {this.props.value}
+      <button className="square" onClick={props.onClick}>
+        {props.value}
       </button>
     );
-  }
 }
+
 
 class Board extends React.Component {
 
